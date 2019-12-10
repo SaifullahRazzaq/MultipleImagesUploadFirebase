@@ -50,7 +50,29 @@ export default class Uploaded extends Component {
        }
        Promise.all(promises)
        .then(results => {
-         console.log(results);
+           console.log("res========>",results)
+         if(results.length){
+            fetch('api', {
+              method: 'POST',
+              headers: {
+                  'Content-Type': 'application/json'
+              },
+              body: JSON.stringify({
+                title:this.state.title,
+                description:this.state.description,
+                image1: results[0],
+                image2: results[1],
+                image3: results[2],
+                category_id: 1
+              })
+            })
+              .then((response) => response.json())
+              .then((response) => {
+              console.log("Images response============>",response)
+              })
+              .catch((err) => {
+                  console.log(err)
+              })
        })
        .catch(error => {
          console.log('images upload error: ', error);
