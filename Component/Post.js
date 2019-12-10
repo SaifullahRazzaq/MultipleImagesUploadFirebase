@@ -9,18 +9,7 @@ import 'firebase/storage';
 
 
 
-var firebaseConfig = {
-    apiKey: "AIzaSyCkYUt1k5VFDZXgpAQJLiuCsrXpbp-O4rQ",
-    authDomain: "imageupload-27e19.firebaseapp.com",
-    databaseURL: "https://imageupload-27e19.firebaseio.com",
-    projectId: "imageupload-27e19",
-    storageBucket: "imageupload-27e19.appspot.com",
-    messagingSenderId: "186328101717",
-    appId: "1:186328101717:web:1055ef785cc819343835dc",
-    measurementId: "G-QX4X7K88Q1"
-  };
   // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
 
 var options = {
   title: 'Select Avatar',
