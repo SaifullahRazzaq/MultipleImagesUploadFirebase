@@ -1,0 +1,44 @@
+{
+  "name": "App",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "start": "react-native start",
+    "test": "jest",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "axios": "^0.19.0",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "express-validator": "^6.3.0",
+    "firebase": "^7.5.2",
+    "nodemon": "^2.0.1",
+    "prop-types": "^15.7.2",
+    "react": "16.9.0",
+    "react-native": "0.61.5",
+    "react-native-camera-roll-picker": "^2.0.0",
+    "react-native-elements": "^1.2.7",
+    "react-native-fetch-blob": "^0.10.8",
+    "react-native-image-crop-picker": "^0.26.1",
+    "react-native-image-picker": "^1.1.0",
+    "react-native-vector-icons": "^6.6.0",
+    "react-navigation": "^4.0.10",
+    "styled-components": "^4.4.1"
+  },
+  "devDependencies": {
+    "@babel/core": "7.7.4",
+    "@babel/runtime": "7.7.4",
+    "@react-native-community/eslint-config": "0.0.5",
+    "babel-jest": "24.9.0",
+    "eslint": "6.7.2",
+    "jest": "24.9.0",
+    "metro-react-native-babel-preset": "0.56.3",
+    "react-test-renderer": "16.9.0"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
